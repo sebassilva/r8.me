@@ -1,4 +1,9 @@
 # r8.me
 ##Instalation
 Run `npm install`
-If running in local server, must have installed mongo.db
+
+##Execution
+
+To run type in your terminl:
+
+`npm start` or `DEBUG=rate:* npm start` to see more logs

@@ -1,0 +1,70 @@
+{
+	"id": "f8988f8f-6998-cfe2-a38a-8bed72ee5c3a",
+	"name": "R8.me",
+	"description": "r8.me requests",
+	"order": [
+		"4028532e-3d9c-cbf5-4df2-eccea6c3f506",
+		"bd4bd912-8534-1b76-26a8-736cd6ce93ca"
+	],
+	"folders": [],
+	"timestamp": 1481262400049,
+	"owner": "784940",
+	"public": false,
+	"requests": [
+		{
+			"id": "4028532e-3d9c-cbf5-4df2-eccea6c3f506",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "localhost:3000/api/newUser",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f8988f8f-6998-cfe2-a38a-8bed72ee5c3a",
+			"data": [
+				{
+					"key": "name",
+					"value": "sebastian",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				},
+				{
+					"key": "mail",
+					"value": "mail",
+					"type": "text",
+					"enabled": true,
+					"warning": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "localhost:3000/api/newUser",
+			"description": "Lists all existing users",
+			"descriptionFormat": "html",
+			"time": 1481262429150,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "bd4bd912-8534-1b76-26a8-736cd6ce93ca",
+			"headers": "",
+			"url": "localhost:3000/api/users",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f8988f8f-6998-cfe2-a38a-8bed72ee5c3a",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:3000/api/users",
+			"description": "Save all existing users",
+			"descriptionFormat": "html",
+			"time": 1481262448981,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

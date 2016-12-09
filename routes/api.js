@@ -1,23 +1,18 @@
 var express = require('express');
 var router = express.Router();
-var db = require('./db.js');
+var mongoose = require('mongoose');
+var userCtrl = require('../controllers/users.js');
 
 
 router.get('/', function(req, res){
-	res.render('index', {title: "Welcome to rate API"});
+	res.render('index', {title: "the madafaca API"});
 });
 
-router.get('/newUser/:name', function(req, res){
-	var name = req.params.name;
-	
-
-	res.render('index', {title: name});
-
+router.post('/newUser', function(req, res){
+	userCtrl.newUser(req, res);
 });
 
 router.get('/users', function(req, res){
-	var user = new User();
-	var usuarios = user.find();
-	res.end('index', {title: usuarios});
+	userCtrl.getUsers(req, res);
 });
 module.exports = router;

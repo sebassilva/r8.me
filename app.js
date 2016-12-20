@@ -13,12 +13,13 @@ mongoose.connect('mongodb://localhost/test/', function(err, res) {
   if(err) throw err;
   console.log('Connected to Database');
 });
-var models = require('./models/users')(app, mongoose);
+var userModels = require('./models/users')(app, mongoose);
+var postModels = require('./models/posts')(app, mongoose);
 var usersCtrl = require('./controllers/users');
+var usersCtrl = require('./controllers/posts');
 
 
 var index = require('./routes/index');
-var users = require('./routes/users');
 var api = require('./routes/api');
 
 
@@ -36,7 +37,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
 app.use('/api', api);
 
 // catch 404 and forward to error handler

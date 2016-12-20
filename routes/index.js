@@ -5,7 +5,7 @@ var path = require('path');
 
 
 router.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname + '/../front/index.html'));
+  res.sendFile(path.join(__dirname + '/../r8/index.html'));
 });
 
 
